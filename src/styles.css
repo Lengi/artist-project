@@ -1,0 +1,87 @@
+:root {
+  --main-font: Playfair Display;
+  --basic-font: Roboto;
+}
+
+body {
+  background: #170005;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+header {
+  background: linear-gradient(
+      360deg,
+      #030504 0%,
+      rgba(2, 4, 3, 0.3) 51.55%,
+      rgba(11, 6, 32, 0) 100%
+    ),
+    url("../images/SKZ-4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 200px 0;
+}
+
+header h1 {
+  font-family: var(--main-font);
+  font-size: 128px;
+  line-height: 1;
+  font-weight: 700;
+  margin: 30px 0 30px;
+}
+
+header h2 {
+  font-family: var(--basic-font);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+header h3 {
+  font-family: var(--basic-font);
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0 auto;
+}
+
+header a {
+  font-family: var(--basic-font);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  text-decoration: none;
+  width: 146px;
+  height: 23px;
+  padding: 16px 32px 16px 32px;
+  border-radius: 100px;
+  color: white;
+  background: #9c0322;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+  header: {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 64px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+}
