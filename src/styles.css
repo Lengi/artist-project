@@ -11,6 +11,17 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 header {
   background: linear-gradient(
       360deg,
@@ -68,7 +79,49 @@ header a {
   margin-top: 10px;
 }
 
-@media (max-width: 900px) {
+footer {
+  color: white;
+  background-image: linear-gradient(rgba(2, 4, 3, 0.8), rgba(2, 4, 3, 0.8)),
+    url(../images/SKZ-6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+footer h3 {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31.99px;
+}
+
+footer p {
+  font-family: var(--basic-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.7;
+  margin-right: 20px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  font-family: var(--basic-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  opacity: 0.7;
+}
+
+@media (max-width: 960px) {
   header: {
     padding: 60px 0;
   }
@@ -83,5 +136,13 @@ header a {
 
   header h3 {
     font-size: 12px;
+  }
+
+  footer {
+    padding: 45px;
+  }
+
+  footer h3 {
+    font-size: 18px;
   }
 }
