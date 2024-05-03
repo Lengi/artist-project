@@ -14,13 +14,21 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 header {
@@ -80,13 +88,48 @@ header a {
   margin-top: 10px;
 }
 
+img {
+  max-width: 100%;
+}
+
+main {
+  color: white;
+}
+
+main h2 {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  text-align: left;
+  color: #fc7794;
+  margin: 0;
+}
+
+main h3 {
+  font-family: var(--main-font);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+}
+
+main p {
+  font-family: var(--basic-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
 footer {
   color: white;
   background-image: linear-gradient(rgba(2, 4, 3, 0.8), rgba(2, 4, 3, 0.8)),
     url(../images/SKZ-6.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
 }
 
 footer h3 {
@@ -144,5 +187,13 @@ footer a {
 
   footer h3 {
     font-size: 18px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
   }
 }
