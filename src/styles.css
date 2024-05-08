@@ -21,14 +21,61 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
+.grid-4-columns {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.card {
+  background: rgba(236, 104, 158, 0.7);
+  margin-top: 30px 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-footer {
+  padding: 10px;
+}
+
+.btn {
+  font-family: var(--basic-font);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-align: center;
+  padding: 16px;
+  border-radius: 100px;
+  color: white;
+  background: #9c0322;
+  display: block;
+}
+
 section {
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+
+section.secondary {
+  background: linear-gradient(
+      360deg,
+      rgba(3, 5, 4, 0.9) 0%,
+      rgba(2, 4, 3, 0.7) 51.55%,
+      rgba(11, 6, 32, 0.6) 100%
+    ),
+    url("../images/SKZ-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
@@ -103,7 +150,7 @@ main h2 {
   line-height: 1.5;
   letter-spacing: 5px;
   text-align: left;
-  color: #fc7794;
+  color: #fc689e;
   margin: 0;
 }
 
@@ -112,6 +159,24 @@ main h3 {
   font-size: 48px;
   font-weight: 700;
   line-height: 1.5;
+  text-align: left;
+  margin: 0;
+}
+
+main h4 {
+  font-family: var(--basic-font);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: left;
+  margin: 0;
+}
+
+main h5 {
+  font-family: var(--basic-font);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
   text-align: left;
   margin: 0;
 }
