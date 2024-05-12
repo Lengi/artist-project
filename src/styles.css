@@ -281,15 +281,19 @@ footer a {
     grid-gap: 32px;
   }
 
-  .grid-card {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .grid-3-columns {
+  .fav-songs,
+  .members {
     grid-template-columns: 1fr 1fr;
   }
 
   section {
     padding: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .fav-songs,
+  .members {
+    grid-template-columns: 1fr;
   }
 }
